@@ -62,14 +62,15 @@ export class ProductManager {
 
 
 }
-const productManager = new ProductManager(`product.json`)
+//const productManager = new ProductManager(`product.json`)
 
 // async function prueba() {
-// //    await ticketManager.agregarEvento(`Evento3`, `Lugar3`, 3)
-//  //   await ticketManager.agregarEvento(`Evento4`, `Lugar4`, 4)
+// //    await productManager.addProduct(`Producto 3`, `Tipo 3`, 3)
+// //    await productManager.addProduct(`Producto 4`, `Tipo 4`, 4)
 
-//  const eventos = await ticketManager.getEventosById(2)
-//  console.log(eventos)
+
+//  const products = await productManager.getProductsById(2)
+//  console.log(products)
 
 // }
 

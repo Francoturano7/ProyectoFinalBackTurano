@@ -1,7 +1,7 @@
 import express from "express"
-import { ProductManager } from "./productManager.js"
+import { ProductManager } from "./app.js"
 const app = express()
-const productManager = new ProductManager(`DB.json`)
+const productManager = new ProductManager(`./src/archivos/product.json`)
 
 app.get(`/products`, async(req,res)=>{
     const {limit}= req.query
@@ -18,5 +18,5 @@ app.get(`/products/:idProduct`,async(req,res)=>{
 const PORT=8080
 
 app.listen(PORT,()=>{
-    console.log(`escuchando puerto ${PORT}`)
+    console.log(`Escuchando puerto ${PORT}`)
 })
