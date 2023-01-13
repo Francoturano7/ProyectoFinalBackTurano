@@ -15,7 +15,7 @@ app.get(`/products/:idProduct`,async(req,res)=>{
     res.json({product})
 })
 
-const PORT=8070
+const PORT=8080
 
 app.listen(PORT,()=>{
     console.log(`escuchando puerto ${PORT}`)
